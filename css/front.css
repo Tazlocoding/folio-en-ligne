@@ -1,0 +1,279 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+/*************************************HEADER************************/
+#header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  position: relative; 
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: var(--fond2);
+  position: fixed;
+  z-index: 50;
+}
+
+#header nav figure img {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  left: 50px;
+  top: 30px;
+}
+
+#header nav ul {
+  list-style-type: none;
+  margin-right: 80px;
+}
+
+#header nav li {
+  display: inline-block;
+  padding: 20px 15px;
+}
+
+#header nav li a {
+  text-decoration: none;
+  color: var(--fontP);
+  font-size: 1.5rem;
+}
+#header nav li a:hover {
+  color: green;
+}
+
+/****************************TITRE**********************************/
+#title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100vh;
+  justify-content: center;
+  background-color: var(--fond1);
+}
+
+#position {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#title h1 {
+  position: absolute;
+  margin-top: 300px;
+  flex-wrap: wrap; 
+  color: var(--fontT);
+  font-size: 80px;
+  font-weight: 900;
+  text-shadow: 0 4px 1px #000;
+}
+
+/****************************PROFIL*********************************/
+h1, h2 {
+  width: 100%;
+  text-transform: uppercase;
+  color: rgb(85, 30, 30);
+  text-align: center;
+}
+
+p {
+  color: #38198b;
+}
+
+#profil, #portfolio {
+  display:flex;
+
+  flex-direction: column;
+  background-color: var(--font1);
+}
+
+#profil h1 {
+  margin: 40px;
+  font-size: 3rem;
+}
+
+#profil h2{
+  margin: 40px 0;
+}
+
+#profil p {
+  width: 80%;
+  margin: auto;
+}
+
+#competence {
+ text-align: center;
+}
+
+
+#competence p {
+  padding: 10px 0;
+}
+/************************************************/
+.block-right {
+  width: 70%;
+  margin: 50px auto; 
+  color: #fff;
+}
+.block-right__ligne {
+  display: flex;
+  padding: 2px;
+  margin-top: 4px;
+}
+
+.block-right__gauche {
+  width: 30%;
+  margin: 10px 10px;
+}
+
+.block-right__droite {
+  width: 100%;
+  margin: 5px 10px;
+}
+
+/****************************PORTFOLIO********************/
+#portfolio {
+  background-color: var(--fond1);
+}#portfolio h1 {
+  margin: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+}
+
+/**********************SLIDER*****************************/
+/* #slider{
+	display:flex;
+	width:100%;
+	height:calc(100vh - 160px);
+	justify-content:center;
+	overflow:hidden;
+	border-bottom:9px solid var(--color_1);
+}
+
+#slider h1{
+	font-size:2.4rem;
+	text-align:left;
+	padding-bottom:10px;
+	text-shadow:1px 1px 2px #000;
+}
+
+#slider article{
+	position:absolute;
+	top:calc(50% + 30px);
+	transform:translate(0,-50%);
+	left:15%;
+	z-index:10;
+	color:#fff;
+	font-size:1.3rem;
+	font-weight:bold;
+}
+
+#slider img{
+	width:100%;
+	height:inherit;
+	object-fit:cover;
+	object-position:top;
+	}
+	 */
+/************FORMULAIRE***************/
+#contact {
+  display: flex;
+  height: 100vh;
+  background-color: var(--fond2);
+  
+}
+
+#contact form {
+	width: 60%;
+  margin: auto;
+  
+}
+
+#contact input,
+#contact textarea {
+	display: block;
+	padding: 8px 15px;
+	border: none;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+#contact input {
+ margin-bottom: 30px;
+}
+
+#contact textarea {
+	min-height: 120px;
+	max-height: 160px;
+	max-width: 100%;
+	min-width: 100%;
+}
+
+#contact input[type=submit] {
+  width: auto;
+}
+
+
+
+/**************************/
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--fond1);
+}
+#footer h2 {
+  text-align: center;
+}
+#footer nav ul {
+  
+  list-style-type: none;
+  margin-left: 45%;
+}
+
+#footer nav li {
+  padding: 20px 15px;
+}
+
+#footer nav li a {
+  text-decoration: none;
+  color: var(--fontP);
+}
+#footer figure {
+  display: inline;
+}
+
+#footer figure img {
+  margin-top: 150px;
+  padding: 0 50px;
+}
+
+#footer>div{
+	width:50%;
+}
+
+.avertissement {
+	background-color: orange;
+}
+
+.pas_ok {
+	color: orange;
+	display: block;
+	padding: 5px 0;
+}
+
+.ok {
+	color: greenyellow;
+	display: block;
+	padding: 5px 0;
+}
+
+
+

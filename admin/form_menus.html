@@ -1,0 +1,12 @@
+<?php if(isset($entete)){echo $entete;} ?>
+<form action="admin.php?module=menus&action=<?php if(isset($action_form)){echo $action_form;} ?>" method="POST">
+	<label>Intitulé du menu</label>
+  <input <?php if(isset($color['intitule_menu'])){echo $color['intitule_menu'];} ?>placeholder="Intitulé de l'item" name="intitule_menu" type="text" value="<?php if(isset($_POST['intitule_menu'])){echo $_POST['intitule_menu'];} ?>" />
+  <label>Inscrit le lien</label>
+  <input <?php if(isset($color['lien_menu'])){echo $color['lien_menu'];} ?>placeholder="Lien de l'item" name="lien_menu" type="text" value="<?php if(isset($_POST['lien_menu'])){echo $_POST['lien_menu'];} ?>" />
+  <label>Inscrit la place</label>
+	<input <?php if(isset($color['rang_menu'])){echo $color['rang_menu'];} ?>placeholder="Rang de l'item" name="rang_menu" type="text" value="<?php if(isset($_POST['rang_menu'])){echo $_POST['rang_menu'];} ?>" />
+	<input name="submit" type="submit" value="ENVOYER" />
+	
+	<?php if(isset($message)){echo $message;} ?>
+</form>

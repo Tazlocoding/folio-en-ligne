@@ -1,20 +1,23 @@
 @charset "UTF-8"; /* Définit l'encodage de la feuille de style à Unicode UTF-8 */
 *{ padding:0;margin:0;box-sizing:border-box;outline:none;}
 
-:root {
- --header: #bf4e30;
- --fontT: #c6ccb2;
- --fontP: #849483;
- --fond1: #c08552;
- --fond2: #36382e;
- --width_admin: 270px;
+:root{
+	/**/
+--color_1:rgba(191,78,48,1);
+--color_2:rgba(254,96,0,1);
+--color_3:rgba(198,204,178,0.75);
+--color_4:rgba(132,148,131,1);
+--color_5:rgba(192,133,82,1);
+--haut_bas:rgba(54,56,44,1);
+--width_admin:270px;
 }
 
 
 @font-face {
-  font-family: 'montserratregular';
-  src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
-       url('../fonts/montserrat-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'titre';
+  src: url('../fonts/FredokaOne-Regular.ttf');
+}
+@font-face {
+  font-family: 'paragraphe';
+  src: url('../fonts/BreeSerif-Regular.ttf');
 }
